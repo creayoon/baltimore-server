@@ -1,0 +1,55 @@
+{
+  "name": "baltimore-server",
+  "version": "2.0.0",
+  "description": "baltimore node server",
+  "homepage": "https://github.com/creayoon/baltimore-server#readme",
+  "author": "",
+  "files": [
+    "lib"
+  ],
+  "main": "index.js",
+  "keywords": [
+    "node",
+    "mongo",
+    "mongoose"
+  ],
+  "devDependencies": {
+    "nsp": "^2.6.3",
+    "eslint": "^4.1.0",
+    "eslint-config-xo-space": "^0.16.0",
+    "jest": "^19.0.2",
+    "jest-cli": "^20.0.0"
+  },
+  "scripts": {
+    "start": "nodemon ./index",
+    "test": "echo \"Error: no test specified\" && exit 1 && jest",
+    "prepublish": "nsp check",
+    "pretest": "eslint . --fix"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/creayoon/baltimore-server.git"
+  },
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/creayoon/baltimore-server/issues"
+  },
+  "eslintConfig": {
+    "extends": "xo-space",
+    "env": {
+      "jest": true,
+      "node": true
+    }
+  },
+  "jest": {
+    "testEnvironment": "node"
+  },
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "express": "^4.15.4",
+    "mongoose": "^4.11.10",
+    "nodemon": "^1.12.0",
+    "passport": "^0.4.0",
+    "passport-http": "^0.3.0"
+  }
+}
